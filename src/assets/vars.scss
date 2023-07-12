@@ -1,0 +1,26 @@
+:root {
+  --primary-color: #1a67ff;
+  //标尺背景颜色
+  --ruler-bg: #f4f7fe;
+  //移动蒙版背景颜色
+  --move-bg: rgba(0, 0, 0, 0.1);
+  //画布阴影
+  --canvas-shadow: rgba(0, 0, 0, 0.5);
+
+  --slider-icon: #32363c;
+  --slider-bg: #ffffff;
+  --canvas-slider-border: rgba(0, 0, 0, 0.1);
+
+  --thumbnail-wrap-bg: #f4f7fe;
+}
+
+* {
+  box-sizing: border-box !important;
+}
+body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 0px;
+}
