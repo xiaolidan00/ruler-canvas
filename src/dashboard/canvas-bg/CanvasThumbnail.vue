@@ -124,6 +124,25 @@
         }
       );
 
+      watch(
+        () => editorStore.screenHeight,
+        () => {
+          drawThumbnail();
+        }
+      );
+      watch(
+        () => editorStore.viewHeight,
+        () => {
+          drawThumbnail();
+        }
+      );
+      watch(
+        () => editorStore.viewWidth,
+        () => {
+          drawThumbnail();
+        }
+      );
+
       onMounted(() => {
         window.addEventListener('resize', getViewBox);
         getViewBox();
